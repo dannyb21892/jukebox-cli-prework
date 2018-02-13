@@ -67,7 +67,3 @@ def run
     exit_jukebox
   end
 end  
-
-nums = [1 .. songs.length]
-nums = nums.map {|a| a.to_s}
-puts nums
