@@ -30,10 +30,10 @@ def play(songs)
   puts "Please enter a song name or number:"
   song = gets.chomp
   nums = [1..songs.length]
-  nums = nums.map {|a| 
+  nums = nums.map {|a| a.to_s}
   if songs.include?(song)
     puts "Playing #{song}"
-  elsif song.to_i <= songs.length
+  elsif nums.include?(song)
     puts "Playing #{songs[song.to_i - 1]}"
   else
     puts "Invalid input, please try again"
