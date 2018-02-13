@@ -19,7 +19,7 @@ def help
 end
 
 def list(songs)
-   i = 1
+  i = 1
   songs.each do |song|
     puts "#{i}. #{song}"
     i += 1
@@ -43,3 +43,9 @@ def exit_jukebox
 end
 
 def run
+  help
+  puts "Please enter a command:"
+  command = gets.chomp
+  while command != "exit"
+    if command = list
+      list
