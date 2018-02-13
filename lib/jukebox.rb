@@ -17,3 +17,14 @@ def help
 - play : lets you choose a song to play
 - exit : exits this program"
 end
+
+def list(songs)
+   i = 1
+  songs.each do |song|
+    puts "#{i}. #{song}"
+    i += 1
+  end
+end
+
+def play(songs)
+  puts ""
