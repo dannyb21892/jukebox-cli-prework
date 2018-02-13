@@ -65,6 +65,5 @@ def run(songs)
       command = gets.chomp
     end
     exit_jukebox
-    break
   end
 end  
