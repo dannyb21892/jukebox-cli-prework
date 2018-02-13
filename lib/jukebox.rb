@@ -29,8 +29,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song = gets.chomp
-  nums = [1..songs.length]
-  nums = nums.map {|a| a.to_s}
+  nums = []
+  i = 1
+  while i <= songs.length
+    nums << i.to_s
+    i += 1
+  end
+  
   if songs.include?(song)
     puts "Playing #{song}"
   elsif nums.include?(song)
