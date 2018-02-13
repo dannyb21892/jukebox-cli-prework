@@ -54,7 +54,7 @@ def run(songs)
   puts "Please enter a command:"
   command = gets.chomp
   while command != "exit"
-    if command == list
+    if command == "list"
       list(songs)
     elsif command == "play"
       play(songs)
