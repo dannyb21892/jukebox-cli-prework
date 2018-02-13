@@ -49,11 +49,11 @@ def run
   puts "Please enter a command:"
   command = gets.chomp
   while command != "exit"
-    if command = list
+    if command == list
       list(songs)
-    elsif command = "play"
+    elsif command == "play"
       play(songs)
-    elsif command = "help"
+    elsif command == "help"
       help
     else
       puts "Please enter a command:"
@@ -63,6 +63,6 @@ def run
   end
 end  
 
-nums = [1..songs.length]
+nums = [1 .. songs.length]
 nums = nums.map {|a| a.to_s}
 puts nums
